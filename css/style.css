@@ -1,0 +1,79 @@
+/* DEFAULTS */
+html, body {
+    background-color: #000; /* Set background color to black */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* NAVIGATION */
+
+.nav-link-hover:hover {
+    color: #ffc107 !important; /* Use the warning color */
+}
+
+/* Dropdown menu styling to match the navbar */
+.navbar .dropdown-menu {
+    background-color: #343a40; /* Same as navbar background */
+    /* If you have a specific font family in use for the navbar, apply it here as well */
+  }
+  
+  /* Dropdown item styling for text color and hover effects */
+  .navbar .dropdown-menu .dropdown-item {
+    color: #ffffff; /* White text for dropdown items */
+    font-weight: normal; /* Match the font weight as per your preference, adjust if needed */
+  }
+
+  
+  .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #ffc107; /* Optional: Change background color on hover to match the "warning" theme */
+    color: #343a40; /* Change text color on hover for better contrast, if needed */
+  }
+
+  .navbar-brand > span {
+    display: block; /* Continue treating each span as a block-level element */
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default paddings */
+  }
+  
+  /* Adjust the bottom margin of the first span */
+  .navbar-brand > span:first-child {
+    letter-spacing: 0.7px;
+    margin-bottom: -5px; /* Pulls the "Technology" text closer to "8-Bit Hive" */
+  }
+  
+  /* Optional: Adjust the top margin of the second span if needed */
+  .navbar-brand > span:nth-child(2) {
+    margin-top: -5px; /* Further adjustment if needed */
+    letter-spacing: 6.9px; /* Keep your previous adjustments */
+    font-size: 0.9em; /* Keep your previous adjustments */
+  }
+
+  
+button[type="submit"] {
+    background-color: #ffc107; /* Warning color */
+    color: #343a40; /* Dark grey for text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 0.9;
+  }
+
+  .btn-warning:hover {
+    background-color: #e0a800; /* Lighter or different color */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+
+  @media (max-width: 992px) { /* Adjusts for Bootstrap's large (lg) breakpoint or your specific needs */
+    .custom-quote-button {
+      margin-right: 20px; /* Adjust the margin as needed */
+    }
+  }
